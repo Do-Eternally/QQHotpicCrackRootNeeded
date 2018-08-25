@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center|top"
+	android:orientation="vertical">
+
+	<Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="?android:actionBarSize"/>
+
+	<LinearLayout
+		android:gravity="center"
+		android:padding="32dp"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:textAllCaps="true"
+			android:id="@+id/tv_status"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="Medium Text"
+			android:layout_marginBottom="24dp"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="初始化"
+				android:onClick="init"
+				android:textColor="#FFFFFFFF"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:text="开始"
+				android:textColor="#ffffff"
+				android:onClick="startCrack"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:text="恢复"
+				android:textColor="#ffffff"
+				android:onClick="restore"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

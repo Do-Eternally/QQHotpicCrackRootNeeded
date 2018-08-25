@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--elevation-->
+<dimen name="z_fab">5dp</dimen>
+<dimen name="z_toolbar">6px</dimen>
+<dimen name="z_popup">8dp</dimen>
+<dimen name="z_dialog">4dp</dimen>
+<dimen name="z_card">5px</dimen>
+<!--textsize-->
+<dimen name="tsize_small">13sp</dimen>
+<dimen name="tsize_normal">16sp</dimen>
+<dimen name="tsize_large">20sp</dimen>
+<!--spacing-->
+<dimen name="spacing_small">4dp</dimen>
+<dimen name="minus_spacing_small">-4dp</dimen>
+<dimen name="spacing_normal">8dp</dimen>
+<dimen name="minus_spacing_normal">-8dp</dimen>
+<dimen name="spacing_large">16dp</dimen>
+<dimen name="spacing_xlarge">24dp</dimen>
+<dimen name="spacing_xxlarge">32dp</dimen>
+<item name="letter_spacing_small" type="dimen">.05</item>
+<item name="letter_spacing_normal" type="dimen">.1</item>
+<item name="letter_spacing_large" type="dimen">.16</item>
+
+<!--width & height-->
+<dimen name="divider_height">1px</dimen>
+<dimen name="d_fab_large">56dp</dimen>
+<dimen name="d_fab_normal">48dp</dimen>
+<dimen name="d_fab_small">40dp</dimen>
+<dimen name="d_fab_mini">32dp</dimen>
+<!--radius-->
+<dimen name="r_card_corner">3dp</dimen>
+<dimen name="r_dialog_corner">5dp</dimen>
+
+</resources>

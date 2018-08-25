@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Light" parent="@android:style/Theme.Material.Light.NoActionBar">
+		<item name="android:colorAccent">@color/primary</item>
+		<item name="android:colorControlHighlight">@color/quater_primary</item>
+		<item name="android:colorButtonNormal">?android:colorAccent</item>
+		<item name="android:colorEdgeEffect">?android:colorAccent</item>
+		<item name="android:alertDialogTheme">@style/DialogStyle</item>
+		<item name="android:alertDialogStyle">@style/DialogStyle</item>
+		
+		
+	</style>
+	
+	
+	<style name="DialogStyle" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:backgroundDimAmount">0.25</item>
+        <item name="android:windowNoTitle">true</item>
+		<item name="android:colorAccent">@color/primary</item> 
+		<item name="android:colorButtonNormal">@color/primary</item>
+		<item name="android:colorControlHighlight">@color/quater_primary</item>
+        <item name="android:statusBarColor">?android:attr/colorPrimaryDark</item>
+		<item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+		<item name="android:windowElevation">@dimen/z_dialog</item>
+		<item name="android:windowBackground">@drawable/dialog_background</item>
+	</style>
+	
+	<style name="DialogAnimation" parent="@style/android:Animation.Activity">
+		<item name="android:activityOpenEnterAnimation">@null</item>
+		<item name="android:activityCloseExitAnimation">@null</item>
+		<item name="android:activityOpenExitAnimation">@null</item>
+		<item name="android:activityCloseEnterAnimation">@null</item>
+		<item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+		<item name="android:windowExitAnimation">@anim/dialog_exit</item>
+  	</style>
+	
+</resources>

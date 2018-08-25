@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ闪照破解</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help">运行此应用需要Root权限，并且不保证在所有版本的QQ和设备上成功破解。\n使用前请先点击「初始化」，初始化成功后，点击「开始」进行破解。成功后需重启QQ，即可在闪照界面截图，如果QQ无法正常启动或者闪退，请点击「恢复」。注意，请在手机下次重启前点击「恢复」</string>
+	<string name="what_if_not_restore">你的手机在重启后，QQ会消失(数据仍然保留)，您需要重新安装QQ或者点击「恢复」再重启才能复原</string>
+	<string name="about">此软件是破解QQ的闪照的一个示例，仅供学习交流使用，请勿用于非法用途！开发者@xjunz</string>
+	
+</resources>
