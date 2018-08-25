@@ -68,7 +68,16 @@ public class MainActivity extends Activity
 					catch (IOException ioe)
 					{}
 					writer.close();
-					new AlertDialog.Builder(MainActivity.this).setTitle("失败").setMessage(new String(bos.toByteArray())).show();
+					final String stackTrace=new String(bos.toByteArray());
+					new AlertDialog.Builder(MainActivity.this).setTitle("失败").setMessage(stackTrace)
+						.setPositiveButton("复制", new DialogInterface.OnClickListener(){
+
+							@Override
+							public void onClick(DialogInterface p1, int p2)
+							{
+								App.copyToClipboard(stackTrace);
+							}
+						}).show();
 					if (mProgressDialog.isShowing())
 					{
 						mProgressDialog.dismiss();
@@ -93,6 +102,7 @@ public class MainActivity extends Activity
 
 		if (App.SharedPrefManager.isAppUpdate())
 		{
+			showAbout();
 			showHelp();
 		}
 

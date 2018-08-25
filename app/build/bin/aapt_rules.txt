@@ -1,15 +1,15 @@
-# view AndroidManifest.xml #generated:18
+# view AndroidManifest.xml #generated:12
 -keep class xjunz.qqhotpiccrack.App { <init>(...); }
 
-# view AndroidManifest.xml #generated:27
+# view AndroidManifest.xml #generated:20
 -keep class xjunz.qqhotpiccrack.MainActivity { <init>(...); }
 
-# onClick res/layout/main.xml #generated:36
+# onClick res/layout/main.xml #generated:35
 -keepclassmembers class * { *** init(...); }
 
-# onClick res/layout/main.xml #generated:52
+# onClick res/layout/main.xml #generated:51
 -keepclassmembers class * { *** restore(...); }
 
-# onClick res/layout/main.xml #generated:44
+# onClick res/layout/main.xml #generated:43
 -keepclassmembers class * { *** startCrack(...); }
 

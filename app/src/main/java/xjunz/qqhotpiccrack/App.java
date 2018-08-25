@@ -14,6 +14,7 @@ public class App extends Application
 	private static SharedPreferences mSharedPref;
 	private static SharedPreferences.Editor mEditor;
 	private static int version_code;
+	private static ClipboardManager mClipboard;
 	
 	@Override
 	public void onCreate()
@@ -23,6 +24,7 @@ public class App extends Application
 		mMainHandler=new Handler(getMainLooper());
 		mSharedPref=getSharedPreferences("data",MODE_PRIVATE);
 		mEditor=mSharedPref.edit();
+		mClipboard=(ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
 		try
 		{
 			PackageInfo info=getPackageManager().getPackageInfo(getPackageName(), 0);
@@ -51,6 +53,10 @@ public class App extends Application
 				}
 			});
 		
+	}
+	
+	public static void  copyToClipboard(Object text){
+		mClipboard.setText(text.toString());
 	}
 	
 	public static class SharedPrefManager{

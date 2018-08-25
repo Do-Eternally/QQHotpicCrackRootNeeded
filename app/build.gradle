@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "xjunz.qqhotpiccrack"
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdkVersion 21
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
